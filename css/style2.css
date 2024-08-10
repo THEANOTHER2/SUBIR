@@ -1,0 +1,89 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #efefef;
+}
+.container1 {
+  max-width: 1400px !important;
+  width: 70% !important;
+  padding: 60px 0 !important;
+  margin-bottom: 30px !important;
+}
+.slide-container {
+  margin: 0 30px !important;
+  overflow: hidden !important;
+}
+.card {
+  background: #fff !important;
+  border-radius: 15px !important;
+  box-shadow: 10px 10px 10px rgba(102, 99, 240, 0.25) !important;
+}
+.card .image-box {
+  height: 300px !important;
+}
+.card .image-box img {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 10px 10px 0 0 !important;
+}
+.card .profile-details {
+  display: flex !important;
+  align-items: center !important;
+  column-gap: 12px !important;
+  padding: 15px !important;
+}
+.card .profile-details img {
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50% !important;
+ }
+.profile-details .name {
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
+.profile-details .job {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  color: #4d4d4d !important;
+}
+
+.swiper-navBtn {
+  color: #2e3592 !important;
+  height: 50px !important;
+  width: 50px !important;
+  transform: translateY(-40%);
+  background: #fff;
+  border-radius: 50% !important;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 24px;
+}
+
+.swiper-pagination-bullet {
+  background-color:#2e3592;
+}
+
+.name {
+  color: #2e3592;
+}
+
+.job {
+  color: rgb(92, 99, 99);
+  font-style: italic;
+
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-navBtn {
+    display: none;
+  }
+}

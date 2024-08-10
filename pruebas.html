@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Responsive</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            box-sizing: border-box;
+            padding-left: 300px; /* Nuevo */
+        }
+
+        .logo {
+            margin-right: 10px; /* Ajustado para mejorar la legibilidad en dispositivos pequeños */
+            flex-grow: 1;
+            max-width: 100%;
+        }
+
+        .opciones {
+            flex-grow: 1;
+            margin: 10px; /* Añadido espacio para mejorar la legibilidad en dispositivos pequeños */
+        }
+
+        .redes-sociales {
+            margin-left: 10px; /* Ajustado para mejorar la legibilidad en dispositivos pequeños */
+            flex-grow: 1;
+            max-width: 100%;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li {
+            margin: 0 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .red-social {
+            margin: 0 33px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .logo {
+                margin-right: 10px;
+            }
+
+            .redes-sociales {
+                margin-left: 10px;
+            }
+
+            .menu {
+                padding-left: 10px; /* Ajustado para mejorar la legibilidad en dispositivos pequeños */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="logo">
+            <img src="tu-logo.png" alt="Logo">
+        </div>
+        <div class="opciones">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="redes-sociales">
+            <ul class="red-social">
+                <li><a href="#" target="_blank">Facebook</a></li>
+                <li><a href="#" target="_blank">Twitter</a></li>
+                <li><a href="#" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+<div class="menu mt-2">
+            <div class="logo"><a href=""><img class="tama" src="img/logo.png"></a></div>
+            <ul class="links">
+                <li class="ml-1"><a href="Home">Inicio</a></li>
+                <li class="ml-1"><a href="Home">Nosotros</a></li>
+                <li class="ml-1"><a href="Home">Servicios</a></li>
+                <li class="ml-1"><a href="Home">Contacto</a></li>
+            </ul>
+            <a href="" class="aco1"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+            <a href="" class="aco2"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            <a href="" class="aco3"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+            <div class="togl_bt">
+                <i class="fa-solid fa-bars-staggered" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li class="Lic1"><a class="TextCol1" href="Home">Inicio</a></li>
+            <li class="ml-1"><a class="TextCol1" href="Home">Nosotros</a></li>
+            <li class="ml-1"><a class="TextCol1" href="Home">Servicios</a></li>
+            <li class="ml-1"><a class="TextCol1" href="Home">Contacto</a></li>
+        </div>

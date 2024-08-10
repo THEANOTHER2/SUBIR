@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles3.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.8.0/dist/gsap.min.js"></script>
+    <title>Loading</title>
+</head>
+<body>
+<div class="container">
+<div class="pre-loader block"> 
+    <div class="loader-wrapper">
+<div class="loader"></div>
+</div>
+</div>
+<div class="sidebar-nav">
+<div class="logo"><a href="#"></a><img src="img/logoP.png" alt="#"></div>
+
+</div>
+<div class="clipper-left">
+<div class="loader-text">AQCUA</div>
+</div>
+<div class="clipper-right">
+<div class="loader-text">SAS</div>
+</div>
+<div class="site-content">
+<div class="site-nav">
+<div class="site-logo"><a href="#">PROTEGE, PREVIENE E IMPULSA.</a></div>
+
+</div>
+<div class="video-container"
+id="video-container">
+<video src="vd/inicio.mp4" loop muted
+autoplay></video>
+</div>
+<div class="play">
+    <div class="play-icon">
+        <ion-icon name="play-sharp"></ion-icon>
+    </div>
+</div>
+</div>
+</div>
+<script>
+
+    gsap.to(".clipper-left", 2, {
+        delay: 2,
+        clipPath: "inset(0 100% 0 0)",
+        ease: "power4.inOut",
+    });
+
+    gsap.to(".clipper-right", 2,{
+        delay: 2,
+        clipPath: "inset(0 0 0 100%)",
+        ease: "power4.inOut",
+    });
+
+    gsap.from(".loader-wrapper", 2, {
+        scale: 0.9,
+        ease: "power1.inOut",
+    });
+
+    gsap.from(".loader", 2.5, {
+        top: "100%",
+        ease: "power3.inOut",
+    });
+
+    gsap.to(".loader-wrapper, .pre-loader", 0.2,  {
+        opacity: 0,
+        display: "none",
+        ease: "power3.inOut",
+        delay: 2.1,
+
+    },
+    "-=1"
+    );
+
+    gsap.from(".play", 2, {
+        delay: 3,
+        scale: 0,
+        ease: "power4.inOut",
+
+        });
+
+        gsap.from(".sidebar-nav > *, .site-nav > *", 1, {
+            opacity: 0,
+            delay: 3,
+            x: 40,
+            ease: "power4.inOut",
+            stagger: {
+                amount: 0.5,
+            }
+    });
+</script>
+<script type="text/javascript">
+   //Redireccionamiento tras 5 segundos
+   setTimeout( function() { window.location.href = "page_1.html"; }, 5000 );
+</script>
+</body>
+</html>
